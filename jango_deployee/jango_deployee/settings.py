@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'jango_deployee.wsgi.application'
 import os
 
 if os.environ.get('RENDER'):
-    # 🌐 Production (Render / Railway MySQL)
+    # 🌐 Production (Render + aiven online MySQL database)
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.mysql",
